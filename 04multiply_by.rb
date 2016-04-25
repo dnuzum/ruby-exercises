@@ -9,3 +9,15 @@
 # > 5
 # > 10
 # > 15
+
+def multiply_by(arr, number)
+  arr.map! do |item|
+    item * number
+  end
+end
+
+puts "First array:"
+puts multiply_by([1, 2, 3, 4], 6)
+
+puts "Second array:"
+puts multiply_by([1, 2, 3, 4], 10)
